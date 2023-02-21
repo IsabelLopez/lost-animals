@@ -1,0 +1,6 @@
+<%= form_with model: @pet do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :specie, collection: Pet::SPECIES %>
+  <%= f.date_field :date_found %>
+  <%= f.submit %>
+<% end %>
